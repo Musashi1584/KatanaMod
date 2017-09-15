@@ -1,20 +1,27 @@
 ﻿[h1]Needs War of the Chosen Expansion[/h1]
-
-V 1.0 Initial release
-
 [b]
-ATTENTION
+
+
+
+
+ATTENTION !!!!!!!111!!!11
+
 UNSUBSCRIBE TO THE VANILLA KATANA PACK RELOADED OR YOUR GAME WILL CRASH!
 
 
-I cutted the vortex variants and stealth overhaul from this mod to release it as soon as possible for WotC.
-Silent Takedown and Void Strike need some heavy adjustments for WotC so this will come back at a later stage.
+
+
+
+
 [/b]
 
-[u]Higher tiers are unlocked when you buy the coresponding sword tier.[/u]
+I cutted the vortex variants for WotC.
+Void Strike need some heavy adjustments for WotC so this will come back at a later stage.
+
+Higher tiers are unlocked when you buy the coresponding sword tier.
 There are no additional costs.
 
-[u]There is a config value if you only want cosmetic variants which have no stat difference to the vanilla swords[/u]
+There is a config value if you only want cosmetic variants which have no stat difference to the vanilla swords
 just set 
 bNinjatoIsCosmetic=true
 bKatanaIsCosmetic=true
