@@ -1,0 +1,22 @@
+[mod]
+publishedFileId=618390976
+Title=Katana Mod
+Description=Adds several new weapons with japanese influence. Currently a wakizashi and a katana. 
+
+The mod adds the swords to a savegame, just enable the mod and you will be able to equip them. There is no need to investigate it or buy it, its added by default. Remember, removing the mod will invalidate the savegames where it has been used (not my fault, xcom2 modding works that way) 
+
+
+The Katana does 1 less damage than the base sword, but adds 1 mobility, 10 aim, and 10 crit 
+The Wakizashi does 1 less damage, but adds 3 mobility. 
+
+There are higher tier versions of the katana now , the Plasma katana (tier 3) and the Energy katana(tier 2) Both dont have added status as the vanilla weapons(stun and fire), but have higher damage and ignore part of the armor, making them really good against mechanical targets. 
+
+A sheath for it its being worked on. 
+
+Link to article explaining how its done http://vblanco20-1.github.io/LightSwordXCOM2Mod/ 
+
+If you have problems with the mod, please post into the bugs-feedback discussion thread.
+tags=
+contentImage=
+
+

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>66854149-a4c6-45d4-a391-ea6e056e7a37</Guid>
+    <Name>Katana Mod</Name>
+    <Description>Katanat Pack Reloaded
+
+tags=weapon</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>ExampleWeapon</AssemblyName>
+    <RootNamespace>ExampleWeapon</RootNamespace>
+    <ProjectGuid>{3f350978-33e7-493a-993b-92c1b54bf591}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGrimyLootMod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComKatanaMod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComUI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComUtilitySlotSidearms.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComVoidStrike.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\InvisibleEffect.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\KatanaMod_ModShaderCache.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\KatanaPkg.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\MusashAnimations.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\StealthOverhaul.chn">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\StealthOverhaul.cht">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\StealthOverhaul.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.chn">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.cht">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.fra">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Localization\XComGame.rus">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModPreview.jpg" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="remarks.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\KatanaMod\Classes\Musashi_Status_Effects.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\KatanaMod\Classes\X2Ability_ModAbilities.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\KatanaMod\Classes\X2DownloadableContentInfo_KatanaMod.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\KatanaMod\Classes\X2Item_Katana_Schematics.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\KatanaMod\Classes\X2Item_Katana_Weapon.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Stats.txt">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\KatanaMod" />
+    <Folder Include="Src\KatanaMod\Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
