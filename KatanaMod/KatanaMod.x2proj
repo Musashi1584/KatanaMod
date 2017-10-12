@@ -89,6 +89,9 @@ tags=weapon</Description>
     <Content Include="Src\KatanaMod\Classes\X2Item_Katana_Weapon.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\KatanaMod\Classes\XGWeaponTintableSheath.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Stats.txt">
       <SubType>Content</SubType>
     </Content>

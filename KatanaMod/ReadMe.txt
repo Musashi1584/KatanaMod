@@ -1,16 +1,10 @@
-﻿[h1]Needs War of the Chosen Expansion[/h1]
+﻿[h1]Update: now with sheaths![/h1]
 [b]
-
-
-
+Needs War of the Chosen Expansion
 
 ATTENTION !!!!!!!111!!!11
 
 UNSUBSCRIBE TO THE VANILLA KATANA PACK RELOADED OR YOUR GAME WILL CRASH!
-
-
-
-
 
 
 [/b]
@@ -35,9 +29,11 @@ bWakizashiIsCosmetic=true
 This mod should work on existing save games.
 
 [u]Credits[/u]
+First and most i want to credit [b]Escrimator[/b].
+The energy and plasma katana models, all wakizashi and all ninjato models and all sheaths are his work.
+
 All credits of the conventional katana model and the original implementation to vblanco20-1[ESP].
-The energy and plasma katana models, all wakizashi and all ninjato models are from escrimator.
-Dōmo arigatō vblanco20-1[ESP] and escrimator. You are the best guys!
+Dōmo arigatō vblanco20-1[ESP] and Escrimator. You are the best guys!
 
 Thanks and Credits to Long War Studios for the fleche ability code and LW2.
 

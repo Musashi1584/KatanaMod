@@ -5,6 +5,7 @@ var config bool bNinjatoIsCosmetic;
 var config bool bKatanaIsCosmetic;
 var config bool bWakizashiIsCosmetic;
 var config bool bHidePreviousTiers;
+var config bool bUseSheaths;
 
 var config WeaponDamageValue NINJATO_CONVENTIONAL_BASEDAMAGE;
 var config WeaponDamageValue NINJATO_CONVENTIONAL_BASEDAMAGE_LW2;
@@ -240,6 +241,12 @@ static function X2DataTemplate CreateTemplate_Ninjato()
 	Template.StowedLocation = eSlot_RightBack;
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.NINJATO_CONVENTIONAL_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_ConvNinjato_Sheath", true);
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -329,6 +336,12 @@ static function X2DataTemplate CreateTemplate_Ninjato_MG()
 
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.NINJATO_MAGNETIC_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_MagNinjato_Sheath", true);
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -424,6 +437,12 @@ static function X2DataTemplate CreateTemplate_Ninjato_BM()
 
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.NINJATO_BEAM_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamNinjato_Sheath", true);
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -512,6 +531,12 @@ static function X2DataTemplate CreateTemplate_Katana()
 	Template.StowedLocation = eSlot_RightBack;
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.KATANA_CONVENTIONAL_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_ConvKatana_Sheath", true);
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -602,6 +627,12 @@ static function X2DataTemplate CreateTemplate_Katana_Stun()
 
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.KATANA_BEAM_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_MagKatana_Sheath", true);
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -695,6 +726,12 @@ static function X2DataTemplate CreateTemplate_Katana_Plasma()
 
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.KATANA_PLASMA_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamKatana_Sheath", true);
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -780,6 +817,12 @@ static function X2DataTemplate CreateTemplate_Wakizashi()
 	Template.StowedLocation = eSlot_RightBack;
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.WAKIZASHI_CONVENTIONAL_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_ConvWakizashi_Sheath", true);
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -869,6 +912,12 @@ static function X2DataTemplate CreateTemplate_Wakizashi_Stun()
 
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.WAKIZASHI_BEAM_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_MagWakizashi_Sheath", true);
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -963,6 +1012,12 @@ static function X2DataTemplate CreateTemplate_Wakizashi_Plasma()
 
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.WAKIZASHI_PLASMA_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamWakizashi_Sheath", true);
+		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;

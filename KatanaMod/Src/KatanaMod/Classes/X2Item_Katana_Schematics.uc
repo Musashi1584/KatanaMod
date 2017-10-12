@@ -17,7 +17,7 @@ class X2Item_Katana_Schematics extends X2Item;
 //	`CREATE_X2TEMPLATE(class'X2SchematicTemplate', Template, 'VortexKatana_BM_Schematic');
 //
 //	Template.ItemCat = 'weapon';
-//	Template.strImage = "img:///KatanaPkg.KatanaEnergy_BM";
+//	Template.strImage = "img:///KatanaPkg.Textures.KatanaEnergy_BM";
 //	Template.PointsToComplete = 0;
 //	Template.Tier = 3;
 //	Template.OnBuiltFn = class'X2Item_DefaultSchematics'.static.UpgradeItems;
