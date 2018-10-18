@@ -243,7 +243,7 @@ static function X2DataTemplate CreateTemplate_Ninjato()
 	Template.GameArchetype = default.NINJATO_CONVENTIONAL_ARCHETYPE;
 	if (default.bUseSheaths)
 	{
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_ConvNinjato_Sheath", true);
 	}
 
@@ -338,7 +338,7 @@ static function X2DataTemplate CreateTemplate_Ninjato_MG()
 	Template.GameArchetype = default.NINJATO_MAGNETIC_ARCHETYPE;
 	if (default.bUseSheaths)
 	{
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_MagNinjato_Sheath", true);
 	}
 
@@ -439,7 +439,7 @@ static function X2DataTemplate CreateTemplate_Ninjato_BM()
 	Template.GameArchetype = default.NINJATO_BEAM_ARCHETYPE;
 	if (default.bUseSheaths)
 	{
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamNinjato_Sheath", true);
 	}
 
@@ -533,7 +533,7 @@ static function X2DataTemplate CreateTemplate_Katana()
 	Template.GameArchetype = default.KATANA_CONVENTIONAL_ARCHETYPE;
 	if (default.bUseSheaths)
 	{
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_ConvKatana_Sheath", true);
 	}
 
@@ -629,7 +629,7 @@ static function X2DataTemplate CreateTemplate_Katana_Stun()
 	Template.GameArchetype = default.KATANA_BEAM_ARCHETYPE;
 	if (default.bUseSheaths)
 	{
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_MagKatana_Sheath", true);
 	}
 
@@ -728,7 +728,7 @@ static function X2DataTemplate CreateTemplate_Katana_Plasma()
 	Template.GameArchetype = default.KATANA_PLASMA_ARCHETYPE;
 	if (default.bUseSheaths)
 	{
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamKatana_Sheath", true);
 	}
 
@@ -820,7 +820,7 @@ static function X2DataTemplate CreateTemplate_Wakizashi()
 	if (default.bUseSheaths)
 	{
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_ConvWakizashi_Sheath", true);
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 	}
 
 	Template.Tier = 0;
@@ -915,7 +915,7 @@ static function X2DataTemplate CreateTemplate_Wakizashi_Stun()
 	if (default.bUseSheaths)
 	{
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_MagWakizashi_Sheath", true);
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 	}
 
 	Template.Tier = 0;
@@ -1015,7 +1015,7 @@ static function X2DataTemplate CreateTemplate_Wakizashi_Plasma()
 	if (default.bUseSheaths)
 	{
 		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamWakizashi_Sheath", true);
-		Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
 	}
 
 	Template.Tier = 0;

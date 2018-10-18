@@ -1,5 +1,31 @@
 class X2DownloadableContentInfo_KatanaMod extends X2DownloadableContentInfo;
 
+static function UpdateWeaponMaterial(XGWeapon WeaponArchetype, MeshComponent MeshComp, MaterialInstanceConstant MIC)
+{
+	local int i, a;
+	local MaterialInterface Mat;
+	local MaterialInstanceConstant AttachmentMIC;
+
+	//MIC.SetScalarParameterValue('PatternUse', 0);
+	
+	for (i = 0; i < WeaponArchetype.PawnAttachments.Length; ++i)
+	{
+		if (WeaponArchetype.PawnAttachments.Find(MeshComp) == INDEX_NONE)
+		{
+			for (a = 0; a < SkeletalMeshComponent(WeaponArchetype.PawnAttachments[i]).GetNumElements(); ++a)
+			{
+				Mat = SkeletalMeshComponent(WeaponArchetype.PawnAttachments[i]).GetMaterial(a);
+				AttachmentMIC = MaterialInstanceConstant(Mat);
+	
+				if (AttachmentMIC != none)
+				{
+					WeaponArchetype.UpdateWeaponMaterial(SkeletalMeshComponent(WeaponArchetype.PawnAttachments[i]), AttachmentMIC);
+				}
+			}
+		}
+	}
+}
+
 static event OnPostTemplatesCreated()
 {
 	`LOG("X2DownloadableContentInfo_KatanaMod" @ GetFuncName(),, 'KatanaMod'); 
