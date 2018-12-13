@@ -1,6 +1,6 @@
 class X2DownloadableContentInfo_KatanaMod extends X2DownloadableContentInfo;
 
-static function UpdateWeaponMaterial(XGWeapon WeaponArchetype, MeshComponent MeshComp, MaterialInstanceConstant MIC)
+static function UpdateWeaponMaterial(XGWeapon WeaponArchetype, MeshComponent MeshComp)
 {
 	local int i, a;
 	local MaterialInterface Mat;
@@ -33,7 +33,7 @@ static event OnPostTemplatesCreated()
 
 static event OnLoadedSavedGame()
 {
-	`Log("Musashi KatanaMod : Starting OnLoadedSavedGame");
+	`Log("Starting OnLoadedSavedGame",, 'KatanaMod');
 
 	UpdateStorage();
 }
@@ -69,14 +69,12 @@ static function UpdateStorage()
 		{
 			if (!XComHQ.HasItem(ItemTemplates[i]))
 			{
-				`Log("Musashi KatanaMod : " @ ItemTemplates[i].GetItemFriendlyName() @ " not found, adding to inventory");
+				`Log(ItemTemplates[i].GetItemFriendlyName() @ " not found, adding to inventory",, 'KatanaMod');
 				NewItemState = ItemTemplates[i].CreateInstanceFromTemplate(NewGameState);
 				NewGameState.AddStateObject(NewItemState);
 				XComHQ.AddItemToHQInventory(NewItemState);
-				History.AddGameStateToHistory(NewGameState);
 			} else {
-				`Log("Musashi KatanaMod : " @ ItemTemplates[i].GetItemFriendlyName() @ " found, skipping inventory add");
-				History.CleanupPendingGameState(NewGameState);
+				`Log(ItemTemplates[i].GetItemFriendlyName() @ " found, skipping inventory add",, 'KatanaMod');
 			}
 		}
 	}
@@ -95,6 +93,7 @@ static function UpdateStorage()
 	AddHigherTiers('Wakizashi_MG', 'Sword_MG', XComHQ, NewGameState);
 	AddHigherTiers('Wakizashi_BM', 'Sword_BM', XComHQ, NewGameState);
 	//schematics should be handled already, as the BuildItem UI draws from ItemTemplates, which are automatically loaded
+	History.AddGameStateToHistory(NewGameState);
 }
 
 static function AddHigherTiers(
@@ -119,18 +118,16 @@ static function AddHigherTiers(
 		if (!XComHQ.HasItem(ItemTemplate) && 
 			XComHQ.HasItem(CheckItemTemplate))
 		{
-			`Log("Musashi KatanaMod : " @ ItemTemplate.GetItemFriendlyName() @ " not found, adding to inventory");
+			`Log(ItemTemplate.GetItemFriendlyName() @ " not found, adding to inventory",, 'KatanaMod');
 			NewItemState = ItemTemplate.CreateInstanceFromTemplate(NewGameState);
 			NewGameState.AddStateObject(NewItemState);
 			XComHQ.AddItemToHQInventory(NewItemState);
-			History.AddGameStateToHistory(NewGameState);
 		} else if(XComHQ.HasItem(ItemTemplate) && !XComHQ.HasItem(CheckItemTemplate)) {
 			NewItemState = ItemTemplate.CreateInstanceFromTemplate(NewGameState);
 			XComHQ.RemoveItemFromInventory(NewGameState, NewItemState.GetReference(), 1);
-			`Log("Musashi KatanaMod : " @ ItemTemplate.GetItemFriendlyName() @ " removed because coressponding tier not unlocked");
+			`Log(ItemTemplate.GetItemFriendlyName() @ " removed because coressponding tier not unlocked",, 'KatanaMod');
 		} else {
-			`Log("Musashi KatanaMod : " @ ItemTemplate.GetItemFriendlyName() @ " found or not unlocked yet, skipping inventory add");
-			History.CleanupPendingGameState(NewGameState);
+			`Log(ItemTemplate.GetItemFriendlyName() @ " found or not unlocked yet, skipping inventory add",, 'KatanaMod');
 		}
 	}
 }
