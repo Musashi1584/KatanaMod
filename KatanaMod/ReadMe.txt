@@ -1,4 +1,4 @@
-﻿[h1]Update: now with sheaths![/h1]
+﻿[h1]Update: vortex weapons are back![/h1]
 [b]
 Needs War of the Chosen Expansion
 
@@ -6,13 +6,9 @@ ATTENTION !!!!!!!111!!!11
 
 UNSUBSCRIBE TO THE VANILLA KATANA PACK RELOADED OR YOUR GAME WILL CRASH!
 
-
 [/b]
 
-I cutted the vortex variants for WotC.
-Void Strike need some heavy adjustments for WotC so this will come back at a later stage.
-
-Higher tiers are unlocked when you buy the coresponding sword tier.
+Higher tiers are unlocked when you buy the coresponding vanilla sword tier.
 There are no additional costs.
 
 There is a config value if you only want cosmetic variants which have no stat difference to the vanilla swords

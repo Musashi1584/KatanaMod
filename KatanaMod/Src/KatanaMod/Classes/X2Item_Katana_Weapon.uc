@@ -217,9 +217,9 @@ static function array<X2DataTemplate> CreateTemplates()
 	ModWeapons.AddItem(CreateTemplate_Wakizashi_Stun());
 	ModWeapons.AddItem(CreateTemplate_Wakizashi_Plasma());
 
-	//ModWeapons.AddItem(CreateTemplate_VortexNinjato_BM());
-	//ModWeapons.AddItem(CreateTemplate_VortexKatana_BM());
-	//ModWeapons.AddItem(CreateTemplate_VortexWakizashi_BM());
+	ModWeapons.AddItem(CreateTemplate_VortexNinjato_BM());
+	ModWeapons.AddItem(CreateTemplate_VortexKatana_BM());
+	ModWeapons.AddItem(CreateTemplate_VortexWakizashi_BM());
 
 	return ModWeapons;
 }
@@ -1109,6 +1109,10 @@ static function X2DataTemplate CreateTemplate_VortexNinjato_BM()
 	
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.NINJATO_VORTEX_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamNinjato_Sheath", true);
+	}
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -1223,6 +1227,11 @@ static function X2DataTemplate CreateTemplate_VortexKatana_BM()
 	
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.KATANA_VORTEX_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamKatana_Sheath", true);
+	}
+
 	Template.Tier = 0;
 
 	Template.iRadius = 1;
@@ -1333,6 +1342,11 @@ static function X2DataTemplate CreateTemplate_VortexWakizashi_BM()
 
 	// This all the resources; sounds, animations, models, physics, the works.
 	Template.GameArchetype = default.WAKIZASHI_VORTEX_ARCHETYPE;
+	if (default.bUseSheaths)
+	{
+		Template.AddDefaultAttachment('Sheath', "KatanaPkg.Meshes.SM_BeamWakizashi_Sheath", true);
+		//Template.GameplayInstanceClass = class'XGWeaponTintableSheath';
+	}
 	Template.Tier = 0;
 
 	Template.iRadius = 1;

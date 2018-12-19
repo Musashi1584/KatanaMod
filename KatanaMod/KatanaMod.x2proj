@@ -38,9 +38,6 @@ tags=weapon</Description>
     <Content Include="Content\InvisibleEffect.upk">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Content\KatanaMod_ModShaderCache.upk">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Content\KatanaPkg.upk">
       <SubType>Content</SubType>
     </Content>
@@ -92,6 +89,24 @@ tags=weapon</Description>
     <Content Include="Src\KatanaMod\Classes\XGWeaponTintableSheath.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\VoidStrike\Classes\Musashi_Abilities_VoidStrike.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\VoidStrike\Classes\Musashi_Action_ApplyMITV.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\VoidStrike\Classes\Musashi_Action_RemoveMITV.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\VoidStrike\Classes\Musashi_Conditional_AbilityCooldown.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\VoidStrike\Classes\Musashi_Effect_FlecheBonusDamage.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\VoidStrike\Classes\Musashi_Effect_VoidStrikeReaper.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Stats.txt">
       <SubType>Content</SubType>
     </Content>
@@ -103,6 +118,8 @@ tags=weapon</Description>
     <Folder Include="Src\" />
     <Folder Include="Src\KatanaMod" />
     <Folder Include="Src\KatanaMod\Classes" />
+    <Folder Include="Src\VoidStrike" />
+    <Folder Include="Src\VoidStrike\Classes" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
 </Project>
