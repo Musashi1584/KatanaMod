@@ -48,13 +48,13 @@ static function X2AbilityTemplate LightningStrike(name AbilityName, int tier)
 
 	`CREATE_X2ABILITY_TEMPLATE(Template, AbilityName);
 
-	Template.AbilitySourceName = 'eAbilitySource_Item';
+	Template.AbilitySourceName = 'eAbilitySource_Perk';
 	Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
 	Template.BuildVisualizationFn = TypicalAbility_BuildVisualization;
 	Template.eAbilityIconBehaviorHUD = eAbilityIconBehavior_HideSpecificErrors;
 	Template.HideErrors.AddItem('AA_WeaponIncompatible');
 	Template.CinescriptCameraType = "Ranger_Reaper";
-	Template.IconImage = "img:///UILibrary_PerkIcons.UIPerk_lightninghands";
+	Template.IconImage = "img:///LightningSlashIcon.UIPerk_lightningslash";
 	Template.bHideOnClassUnlock = false;
 	Template.ShotHUDPriority = class'UIUtilities_Tactical'.const.CLASS_SERGEANT_PRIORITY;
 	Template.AbilityConfirmSound = "TacticalUI_SwordConfirm";
